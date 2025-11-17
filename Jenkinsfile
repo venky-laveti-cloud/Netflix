@@ -7,13 +7,13 @@ pipeline {
         IMAGE_TAG       = "latest"
         CONTAINER_NAME  = "netflix-container"
         HOST_PORT       = "3000"
-        DOCKERHUB_REPO  = "yuvakishor"
+        DOCKERHUB_REPO  = "lavetivenkatesh"
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/yuvakishor123/streamflix.git'
+                git branch: 'main', url: 'https://github.com/venky-laveti-cloud/Netflix.git'
             }
         }
 
